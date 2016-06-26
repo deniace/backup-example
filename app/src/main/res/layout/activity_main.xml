@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/kartun"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dolo.calculator.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai pertama" />
+
+    <EditText
+        android:id="@+id/nilai1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukan nilai pertama"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai kedua" />
+
+    <EditText
+        android:id="@+id/nilai2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="masukan nilai kedua" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tambah"
+
+            android:scaleType="centerCrop"
+            android:textSize="13dp"
+            android:layout_weight="1"
+            android:id="@+id/tambah"
+            android:onClick="prosestambah"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kurang"
+            android:layout_weight="1"
+            android:id="@+id/kurang"
+            android:onClick="proseskurang"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kali"
+            android:layout_weight="1"
+            android:id="@+id/kali"
+            android:onClick="proseskali"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="bagi"
+            android:id="@+id/bagi"
+            android:onClick="prosesbagi"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:id="@+id/hasil"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        />
+
+</LinearLayout>
